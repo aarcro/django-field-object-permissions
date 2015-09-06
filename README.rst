@@ -1,11 +1,12 @@
 =================================
-# django-field-object-permissions
+django-field-object-permissions
 =================================
 ``django-field-object-permissions`` is an object permission system based on
 field values of the object. (eg: object.owner == user)
 
 Install
 -------
+To install just run::
 
     pip install django-field-object-permissions
 
@@ -27,7 +28,7 @@ on it)::
         fieldobjectpermissions.backends.FieldObjectPermissionsBackend',
     )
 
-3. These new values are optional, defaults are shown below
+3. These new values are optional, defaults are shown below::
 
     FIELD_OBJECT_PERMISSIONS = {
         'OWNER_FIELDS': ('owner',),
