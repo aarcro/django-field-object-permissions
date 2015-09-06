@@ -23,9 +23,9 @@ Configuration
 2. Replace the default authentication backend (fieldobjectpermissions is based
 on it)::
 
-    AUTHENTICATION_BACKENDS = ('
+    AUTHENTICATION_BACKENDS = (
         # django.contrib.auth.backends.ModelBackend,  # Default
-        fieldobjectpermissions.backends.FieldObjectPermissionsBackend',
+        fieldobjectpermissions.backends.FieldObjectPermissionsBackend,
     )
 
 3. These new values are optional, defaults are shown below::
