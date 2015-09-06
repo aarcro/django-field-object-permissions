@@ -48,18 +48,18 @@ def get_package_data(package):
 
 # python setup.py register
 if sys.argv[-1] == 'publish':
-    os.system("python setup.py sdist upload")
+    os.system('python setup.py sdist upload -r pypi')
     args = {'version': get_version(package)}
-    print("You probably want to also tag the version now:")
+    print('You probably want to also tag the version now:')
     print("  git tag -a %(version)s -m 'version %(version)s'" % args)
-    print("  git push --tags")
+    print('  git push --tags')
     sys.exit()
 
 
 setup(
     name='django-field-object-permissions',
     version=get_version(package),
-    url='http://github.com/vintasoftware/django-role-permissions',
+    url='http://github.com/aarcr/django-role-permissions',
     license='MIT',
     description='Provides an object permission system based on field values (eg: object.owner == user)',
     author='Aaron McMillin',

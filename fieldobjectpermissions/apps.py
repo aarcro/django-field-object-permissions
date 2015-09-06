@@ -1,5 +1,4 @@
 from django.apps import apps, AppConfig
-from django.conf import settings
 from django.contrib.auth import get_permission_codename
 from django.core import exceptions
 from django.db import DEFAULT_DB_ALIAS, router
