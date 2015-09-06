@@ -59,7 +59,7 @@ if sys.argv[-1] == 'publish':
 setup(
     name='django-field-object-permissions',
     version=get_version(package),
-    url='http://github.com/aarcr/django-role-permissions',
+    url='http://github.com/aarcro/django-field-object-permissions',
     license='MIT',
     description='Provides an object permission system based on field values (eg: object.owner == user)',
     author='Aaron McMillin',
