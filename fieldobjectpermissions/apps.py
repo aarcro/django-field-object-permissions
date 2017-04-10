@@ -132,7 +132,6 @@ class FieldObjectPermissionsConfig(AppConfig):
     verbose_name = 'Field Object Permissions'
 
     def ready(self):
-        # from .backends import GROUP_FIELDS, OWNER_FIELDS, GROUP_ACTIONS, OWNER_ACTIONS
         post_migrate.connect(
             create_permissions,
             dispatch_uid='fieldobjectpermissions.create_permissions',
