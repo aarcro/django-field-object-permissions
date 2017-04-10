@@ -5,12 +5,11 @@ from django.db import DEFAULT_DB_ALIAS, router
 from django.db.models.fields import FieldDoesNotExist
 from django.db.models.signals import post_migrate
 
-from .backends import GROUP_FIELDS, OWNER_FIELDS, GROUP_ACTIONS, OWNER_ACTIONS
-
 
 def _get_extra_permissions(opts, ctype):
     new_perms = []
 
+    from .backends import GROUP_FIELDS, OWNER_FIELDS, GROUP_ACTIONS, OWNER_ACTIONS
     for field in GROUP_FIELDS:
         try:
             opts.get_field(field)
